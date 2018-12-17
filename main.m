@@ -6,7 +6,7 @@
 %联系我：chenqixian@buaa.edu.cn
 
 clear
-[text] = textread('test.txt','%[^\n]');  %读文件
+[text] = textread('test2.txt','%[^\n]');  %读文件
 str = char(text);
 s = '';
 ls = size(str); 
