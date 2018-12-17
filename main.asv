@@ -41,9 +41,8 @@ fid = fopen('HuffmanCode.txt','w');
 fprintf(fid, '%s\n', output);
 fclose(fid);
 
-
+sort_chars = '';
 for i = 1:length(b)
-    index = find(id == i);
-    sort_chars(index) = b(i);
+    
 end
-content = decode(huffman_result, output, sort_chars);
+content = decode(huffman_result, output, b);

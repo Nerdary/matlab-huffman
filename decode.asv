@@ -1,0 +1,24 @@
+% input: huffman code and the matrix prodiced by Huffman.m
+% output: the original content of huffman code
+
+% 2018/12/17 Zehui Jin
+
+function [content] = decode(huffman_result, huffman_code, original_chars)
+    
+    content = '';
+    token = '';
+    Length = length(huffman_code);
+    Count = length(huffman_result);
+    for i=1:Length
+        char = huffman_code(i);         % 取出下一个数字
+        token = strcat(token, char);    % 拼接起来
+        for j=1:Count
+            result = strcmp(token, huffman_result(j));
+            if(result==1)
+                
+            end
+        end
+    end
+        
+
+end
